@@ -5,9 +5,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Dishes = require('../models/dishes');
 
-
-dishRouter.use(bodyParser.json());
 const dishRouter = express.Router();
+dishRouter.use(bodyParser.json());
 
 
 dishRouter.route('/')
